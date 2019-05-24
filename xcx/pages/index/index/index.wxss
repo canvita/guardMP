@@ -1,0 +1,165 @@
+.item-wrapper {
+  position: relative;
+  width: 94%;
+  margin: 15px auto;
+  padding: 15px 25px;
+  background: #fff;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow:  0 0 1 #333;
+}
+
+.item-title  {
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  font-size: 34rpx;
+  color: #666;
+  margin-left: 34rpx;
+}
+
+.title-svg{
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.item-content  {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-top: 10px;
+}
+
+.time-bar {
+  height: 10px;
+  width: 90px;
+  border-radius: 10px;
+  background: #8999f4;
+}
+
+.time-slot {
+  padding: 0 2px;
+}
+
+.step-content {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.biggest-text {
+  font-size: 36px;
+}
+
+.bigger-text {
+  font-size: 20px;
+}
+
+.plain-text {
+  color: #666;
+}
+
+.float-right{
+  float: right;
+}
+
+.space {
+  margin: 0 5px;
+}
+
+.main-color {
+  color:#8bcd48;
+}
+
+
+
+
+.loading {
+    margin: 0 auto;
+    width: 140px;
+    height: 140px;
+    position: relative;
+}
+ 
+.loading .progress {
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background-color: white;
+    border-radius: 50%;
+    left: 10px;
+    top: 10px;
+    text-align: center;
+}
+ 
+.left,
+.right {
+    width: 70px;
+    height: 140px;
+    overflow: hidden;
+    position: relative;
+    float: left;
+    background-color: #eee;
+}
+ 
+.left {
+    border-radius: 140px 0 0 140px;
+}
+ 
+.right {
+    border-radius: 0 140px 140px 0;
+}
+ 
+.left:after,
+.right:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 70px;
+    height: 140px;
+    border-radius: 140px 0 0 140px;
+    background-color: #8bcd48;
+}
+ 
+.right:after {
+    content: "";
+    position: absolute;
+    display: block;
+    border-radius: 0 140px 140px 0;
+}
+.left:after {
+    transform-origin: right center;
+}
+ 
+.right:after {
+    transform-origin: left center;
+    transform: rotateZ(0deg);
+}
+
+.step-num {
+  margin-top: 25px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.warn {
+  position: absolute;
+  right: 25px;
+  top: 15px;
+  height: 60rpx;
+  line-height: 60rpx;
+  color: #830000;
+  border: 1px solid #830000;
+  padding: 0 10px;
+  border-radius: 5px;
+}
+
+.warn-image {
+  width: 40rpx;
+  height: 40rpx;
+  vertical-align: text-bottom;
+  margin: 0 10px 0 5px;
+}

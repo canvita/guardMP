@@ -1,0 +1,52 @@
+<!--pages/center/member/member.wxml-->
+<form bindsubmit='formSubmit'>
+
+  <view class="row">
+    <view class="col-left">姓名:</view>
+    <view class="col-right">
+      <input name="name" placeholder='请输入姓名' value='{{name}}'></input>
+    </view>
+  </view>
+  <view class="row">
+    <view class="col-left">证件类型:</view>
+    <view class="col-right">
+      <radio-group name="card_type" bindchange="changeType">
+        <radio value="ID_CARD" checked="{{card_type == 'ID_CARD' ? 'checked' : ''}}">身份证</radio>
+        <radio value='OTHER' checked="{{card_type == 'OTHER' ? 'checked' : ''}}">其他</radio>
+      </radio-group>
+    </view>
+  </view>
+  <view class="row">
+    <view class="col-left">证件号:</view>
+    <view class="col-right">
+      <input name="card_no" placeholder='请输入证件号' value='{{card_no}}' bindblur='blurCardNo'></input>
+    </view>
+  </view>
+  <view class="row">
+    <view class="col-left">性别</view>
+    <view class="col-right">
+      <radio-group name="sexual">
+        <radio value="MALE" checked="{{sexual == 'MALE' ? 'checked' : ''}}" disabled='{{card_type == "ID_CARD"}}'>男</radio>
+        <radio value='FEMALE' checked="{{sexual == 'FEMALE' ? 'checked' : ''}}" disabled='{{card_type == "ID_CARD"}}'>女</radio>
+      </radio-group>
+    </view>
+  </view>
+  <view class="row">
+    <view class="col-left">年龄:</view>
+    <view class="col-right">
+      <input name="age" placeholder='请输入年龄' value='{{age}}' disabled='{{card_type == "ID_CARD"}}'></input>
+    </view>
+  </view>
+  <view class="remind">
+    <view>温馨提示:</view>
+    <view>当证件类型是其他时,需要手动选择性别以及手动输入年龄.</view>
+    <view>当证件类型是身份证时,则无需手动输入和选择.</view>
+    <view></view>
+  </view>
+  <block wx:if="{{ editing }}">
+    <button class="submit-btn" form-type='submit'>保存修改</button> 
+    <button class="delete-btn" bindtap="deleteMember">删除老人</button> 
+  </block>
+  
+  <button wx:if="{{ !editing }}" class="submit-btn" form-type='submit'>添加老人</button>
+</form>

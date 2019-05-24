@@ -1,0 +1,82 @@
+<block wx:if="{{!no_data}}">
+  <view class="item-wrapper" bindtap='toStepPage'>
+    <view class="loading">
+      <view class="left"></view>
+      <view class="right"></view>
+      <view class="progress">
+        <view class="biggest-text step-num">{{step_num}}</view>
+        <view class="plain-text">/6000步</view>
+      </view>
+    </view>
+    <view class="step-content">
+      <text class="bigger-text space">{{step_calorie}}</text>
+      <text class="plain-text">千卡</text>
+      <text class="bigger-text space">{{distance}}</text>
+      <text class="plain-text">千米</text>
+    </view>
+  </view>
+  <view class="item-wrapper" bindtap='toHeartPage'>
+   <view class="warn" catchtap='cancelWarn' wx:if="{{!no_warning && heart_warning}}"><image class="warn-image" src="/style/svg/warn.svg"></image>心率存在异常</view>
+    <view class="item-title">
+      <image class="title-svg" src="/style/svg/heartbeat.svg"></image>
+      <view class="title">心率</view>
+    </view>
+    <view class="item-content">
+      <view>
+        <text class="biggest-text">{{heart_beat}}</text>
+        <text class="plain-text">次/分</text>
+      </view>
+      <view>
+        <text class="plain-text">昨日平均心率</text>
+        <text class="bigger-text space">{{his_herat_beat}}</text>
+        <text class="plain-text">次/分</text>
+      </view>
+    </view>
+  </view>
+  <view class="item-wrapper" bindtap='toSportPage'>
+    <view class="item-title">
+      <image class="title-svg" src="/style/svg/sporttime.svg"></image>
+      <view class="title">运动时间</view>
+    </view>
+    <view class="item-content">
+      <view>
+        <text class="biggest-text">{{sport_time}}</text>
+        <text class="plain-text">/60分钟</text>
+      </view>
+      <view>
+        <text class="bigger-text space">{{sport_calorie}}</text>
+        <text class="plain-text">千卡</text>
+        <text class="bigger-text space">{{distance}}</text>
+        <text class="plain-text">千米</text>
+      </view>
+    </view>
+  </view>
+
+  <view class="item-wrapper" bindtap='toSleepPage'>
+    <view class="item-title">
+      <image class="title-svg" src="/style/svg/moon.svg"></image>
+      <view class="title">睡眠</view>
+    </view>
+    <view class="item-content">
+      <view>
+        <text class="biggest-text space">{{sleep_hour}}</text>
+        <text class="plain-text">小时</text>
+        <text class="biggest-text space">{{sleep_min}}</text>
+        <text class="plain-text">分钟</text>
+      </view>
+      <view>
+        <view class="time-bar"></view>
+        <view class="time-slot">
+          <text>{{sleep_start}}</text>
+          <text class="float-right">{{sleep_end}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</block>
+
+<view wx:else class='text-center' style='padding: 40px 10px;color:#888; background: #fff;margin-top: 100rpx;'>
+  <image src='/style/svg/no_record.svg' style='width:160px;height:80px;margin:0 auto'></image>
+  <view style='height:10px'></view>
+  <view>暂无数据</view>
+</view>

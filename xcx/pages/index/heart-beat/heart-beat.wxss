@@ -1,0 +1,59 @@
+/* pages/index/heart-beat/heart-beat.wxss */
+page {
+  background: #efefef;
+}
+ec-canvas {
+  width: 100%;
+  height: 100%;
+}
+#mychart-dom-area{
+  width: 100%;
+  height: 300px;
+}
+
+.content-wrapper {
+  clear: both;
+  background: #fff;
+}
+
+.time {
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.tab {
+  float: left;
+  width: 50%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background: #fff;
+  border-bottom: solid 1px #ccc;
+}
+
+.active {
+  font-weight: bold;
+  border-bottom: solid 2px #333;
+}
+
+.heart-beat-text {
+  width: 50%;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  text-align: center;
+  color: #ff7e59;
+  font-size: 20px;
+}
+
+.heart-beat-num{
+  margin-left: 10px;
+  font-size: 40px;
+}
+
+.heart-beat-icon {
+  width: 40px;
+  height: 40px;
+  vertical-align: text-bottom;
+}

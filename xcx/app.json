@@ -1,0 +1,36 @@
+{
+  "pages": [
+    "pages/index/index/index",
+    "pages/center/index/index",
+    "pages/index/heart-beat/heart-beat",
+    "pages/center/member/member",
+    "pages/index/sleep/sleep",
+    "pages/index/step-num/step-num",
+    "pages/index/calorie/calorie"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "canvita",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#666666",
+    "selectedColor": "#FF6B89",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index/index",
+        "text": "主页",
+        "iconPath": "/style/icon/tabbar/icon11@1x.png",
+        "selectedIconPath": "/style/icon/tabbar/icon1@1x.png"
+      },
+      {
+        "pagePath": "pages/center/index/index",
+        "text": "个人主页",
+        "iconPath": "/style/icon/tabbar/icon44@1x.png",
+        "selectedIconPath": "/style/icon/tabbar/icon4@1x.png"
+      }
+    ]
+  }
+}

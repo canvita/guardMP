@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="140px" height="140px" viewBox="0 0 140 140" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Rectangle + Rectangle 2 + Rectangle 3 + Oval + Oval Copy Mask</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="70" cy="70" r="70"></circle>
+        <path d="M56.7495621,0.937126008 C76.2435102,4.5733817 91,21.6752317 91,42.2236446 L91,46.4496484 L1.52173913,46.4496484 L1.52173913,42.2236446 C1.52173913,21.6752317 16.2782289,4.5733817 35.772177,0.937126008 L46.2608696,16.933322 L56.7495621,0.937126008 Z" id="path-3"></path>
+        <path d="M63.8671681,-5.05744569 C31.9847319,34.9106835 12.5489451,56.1365075 5.55980771,58.6200262 C-1.42932971,61.1035449 31.8599327,60.4201553 105.427595,56.5698572 L84.370274,-1.38569877 L63.8671681,-5.05744569 Z" id="path-5"></path>
+        <filter x="-26.8%" y="-30.7%" width="128.8%" height="133.8%" filterUnits="objectBoundingBox" id="filter-6">
+            <feMorphology radius="14" operator="erode" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="7" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="12.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.404271243   0 0 0 0 0.442389456   0 0 0 0 0.274669321  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="个人中心" transform="translate(-305.000000, -153.000000)">
+            <g id="Rectangle-+-Rectangle-2-+-Rectangle-3-+-Oval-+-Oval-Copy-Mask" transform="translate(305.000000, 153.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" fill="#ECBCD6" xlink:href="#path-1"></use>
+                <g id="Group-Copy" mask="url(#mask-2)">
+                    <g transform="translate(24.500000, 29.750000)">
+                        <circle id="Oval" fill="#A95B7D" cx="45.5" cy="7" r="7"></circle>
+                        <path d="M47.25,56 C59.8144781,56 70,41.6781144 70,29.1136364 C70,16.5491583 59.8144781,10.5 47.25,10.5 C34.6855219,10.5 24.5,16.5491583 24.5,29.1136364 C24.5,41.6781144 34.6855219,56 47.25,56 Z" id="Oval-10" fill="#A95B7D"></path>
+                        <path d="M43.0736125,21.2735786 L47.25,22.9777741 L51.4263875,21.2735786 C55.7217351,19.5208408 60.6246771,21.5820334 62.377415,25.877381 C62.7885533,26.8849375 63,27.9627818 63,29.0509936 L63,45.5 L31.5,45.5 L31.5,29.0509936 C31.5,24.4118017 35.2608081,20.6509936 39.9,20.6509936 C40.9882118,20.6509936 42.0660561,20.8624402 43.0736125,21.2735786 Z" id="Rectangle-20" fill="#FFF5E4"></path>
+                        <path d="M47.25,59.5 C55.9484848,59.5 63,50.5989899 63,44.8 C63,39.0010101 55.9484848,38.5 47.25,38.5 C38.5515152,38.5 31.5,39.0010101 31.5,44.8 C31.5,50.5989899 38.5515152,59.5 47.25,59.5 Z" id="Oval-13" fill="#FFF5E4"></path>
+                        <g id="Path-3" stroke-width="1" fill="none" transform="translate(0.000000, 63.000000)">
+                            <mask id="mask-4" fill="white">
+                                <use xlink:href="#path-3"></use>
+                            </mask>
+                            <use id="Mask" fill="#C47A9A" xlink:href="#path-3"></use>
+                            <g mask="url(#mask-4)">
+                                <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+                                <use fill="#B36B8A" fill-rule="evenodd" xlink:href="#path-5"></use>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="70px" height="70px" viewBox="0 0 70 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>Rectangle + Rectangle 2 + Rectangle 3 + Oval + Oval Copy Mask</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="35" cy="35" r="35"></circle>
+    </defs>
+    <g id="09挂号-普通医生" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-15.000000, -79.000000)">
+        <g id="Rectangle-+-Rectangle-2-+-Rectangle-3-+-Oval-+-Oval-Copy-Mask" transform="translate(15.000000, 79.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Mask" fill="#F5F3F3" xlink:href="#path-1"></use>
+            <rect id="Rectangle" fill="#FFDCDC" mask="url(#mask-2)" x="23.8" y="18.2" width="22.4" height="26.6" rx="11.2"></rect>
+            <path d="M29.0127251,47.5999991 L42.5828177,47.5999988 C45.5766547,47.5999988 48.239073,49.5039378 49.2069322,52.3370119 C52.4069987,61.7041026 54.7435624,68.1127143 56.2166233,71.5628471 C57.9260211,75.5665172 58.518064,75.6927036 57.9927517,71.9414062 L16.5195747,71.9414062 L22.3062754,52.5941247 C23.1927014,49.6304441 25.9193202,47.5999991 29.0127251,47.5999991 Z" id="Rectangle-3" fill="#8FD7E0" mask="url(#mask-2)"></path>
+            <path d="M32.2,40.6 L39.2,40.6 L39.2,47.6 C38.4710359,48.9918981 37.3043692,49.6887587 35.7,49.6905816 C34.0956308,49.6924045 32.9289641,48.995544 32.2,47.6 L32.2,40.6 Z" id="Rectangle-2" fill="#FFDCDC" mask="url(#mask-2)"></path>
+            <circle id="Oval" fill="#FFDCDC" mask="url(#mask-2)" cx="46.2" cy="32.2" r="2.8"></circle>
+            <circle id="Oval-Copy" fill="#FFDCDC" mask="url(#mask-2)" cx="23.8" cy="32.2" r="2.8"></circle>
+            <path d="M31.9326389,18.6496528 C30.683941,27.2122975 27.9480469,31.8768374 23.7249566,32.6432726 C23.0902778,33.1129774 21.4262587,26.6792969 24.0728299,21.8351997 C25.8372106,18.6058015 28.457147,17.5439525 31.9326389,18.6496528 Z" id="Path-2" fill="#8B572A" mask="url(#mask-2)"></path>
+            <path d="M29.1766927,18.6447917 C29.4448931,24.6353009 34.7749593,28.2100405 45.1668913,29.3690104 C46.9683119,29.6114583 47.6776377,30.6037326 47.2948686,32.3458333 C48.9159804,26.328588 47.3260713,21.7615741 42.5251411,18.6447917 C37.724211,15.5280093 33.2747282,15.5280093 29.1766927,18.6447917 Z" id="Path-3" fill="#8B572A" mask="url(#mask-2)"></path>
+        </g>
+    </g>
+</svg>

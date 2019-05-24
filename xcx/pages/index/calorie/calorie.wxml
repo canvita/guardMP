@@ -1,0 +1,42 @@
+<!--pages/index/heart-beat/heart-beat.wxml-->
+<view>
+  <view class="tab {{firstTab ? 'active' : ''}}" data-index="{{true}}" bindtap='switchTab'>跟踪</view>
+  <view class="tab {{!firstTab ? 'active' : ''}}" data-index="{{false}}"  bindtap='switchTab'>趋势</view>
+</view>
+<view class="content-wrapper" wx:if="{{firstTab}}">
+  <view class="time">今日运动时间</view>
+  <view class="heart-beat-text">
+    <text class="heart-beat-num">{{sport_time}}</text>/60分钟
+  </view>
+</view>
+<view class="content-wrapper" wx:if="{{!firstTab}}">
+  <view class="time">{{date}} 总运动时间</view>
+  <view class="heart-beat-text">
+    <text class="heart-beat-num">{{date_step}}</text>/60分钟
+  </view>
+</view>
+
+<view class="container">
+  <ec-canvas id="mychart-dom-area" canvas-id="mychart-area" ec="{{ ec }}"></ec-canvas>
+</view>
+
+<view class="content-wrapper" wx:if="{{firstTab}}">
+  <view class="item">
+    <view class="sub-title">距离</view>
+    <view class="">{{distance}}千米</view>
+  </view>
+  <view class="item">
+    <view class="sub-title">燃烧的卡路里</view>
+    <view class="">{{calorie}}千卡</view>
+  </view>
+</view>
+<view class="content-wrapper" wx:if="{{!firstTab}}">
+  <view class="item">
+    <view class="sub-title">距离</view>
+    <view class="">{{date_distance}}千米</view>
+  </view>
+  <view class="item">
+    <view class="sub-title">燃烧的卡路里</view>
+    <view class="">{{date_calorie}}千卡</view>
+  </view>
+</view>

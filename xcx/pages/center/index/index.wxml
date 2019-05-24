@@ -1,0 +1,34 @@
+<view class='info-wrapper'>
+  <open-data class='info-avator' type="userAvatarUrl"></open-data>
+  <open-data class="fake-mobile" type="userNickName" lang="zh_CN"></open-data>
+  <button type="primary" size="mini" class="login-btn" bindtap="login" wx:if="{{!isLogin}}">登录</button>
+  <button type="primary" size="mini" class="login-btn" bindtap="logout" wx:if="{{isLogin}}">退出登录</button>
+</view>
+
+<block wx:for="{{accounts}}" wx:for-item="account" wx:key="{{item._id}}">
+  <view class="medical-card" wx:if="{{!account.medicalCards}}"  bindtap='showMore' data-index="{{index}}" >
+    <view class="medical-card-info">
+      <view class="medical-card-name">{{account.name}}
+        <text class="medical-card-sexual">{{account.sexual == 'MALE' ? '男' : '女'}}</text>
+      </view>
+      <view class="medical-card-item">
+        <image class="medical-card-icon" src="/style/svg/age.svg "></image>{{account.age}}岁
+      </view>
+      <view class="medical-card-item">
+        <image class="medical-card-icon" src="/style/svg/card-number.svg  "></image>
+        {{account.card_type == 'ID_CARD' ? '身份证' : '其他'}}
+      </view>
+      <view class="medical-card-item">
+        <image class="medical-card-icon" src="/style/svg/number.svg "></image>
+        {{account.card_no}}
+      </view>
+    </view>
+    <button class="choose-btn {{ chosen_index == index ? 'green' : 'plain'}}" data-index="{{index}}" catchtap="chooseMember">{{ chosen_index == index ? '已选择展示' : '选择展示'}}</button>
+     <view class="warn" catchtap='cancelWarn' wx:if="{{!no_warning && heart_warning}}"><image class="warn-image" src="/style/svg/warn.svg"></image>心率存在异常</view>
+  </view>
+</block>
+
+
+<view class="add-card" bindtap='addMember'>
+  <image class="add-svg" src="/style/svg/add.svg"></image>
+</view>

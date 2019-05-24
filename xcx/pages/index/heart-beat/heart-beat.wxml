@@ -1,0 +1,22 @@
+<!--pages/index/heart-beat/heart-beat.wxml-->
+<view>
+  <view class="tab {{firstTab ? 'active' : ''}}" data-index="{{true}}" bindtap='switchTab'>跟踪</view>
+  <view class="tab {{!firstTab ? 'active' : ''}}" data-index="{{false}}"  bindtap='switchTab'>趋势</view>
+</view>
+<view class="content-wrapper" wx:if="{{firstTab}}">
+  <view class="time">{{time}}</view>
+  <view class="heart-beat-text">
+    <image class="heart-beat-icon" src="/style/svg/heartbeat.svg"></image>
+    <text class="heart-beat-num">{{heart_beat}}</text> bpm
+  </view>
+</view>
+<view class="content-wrapper" wx:if="{{!firstTab}}">
+  <view class="time">{{date}} 平均心率</view>
+  <view class="heart-beat-text">
+    <image class="heart-beat-icon" src="/style/svg/heartbeat.svg"></image>
+    <text class="heart-beat-num">{{avg_hb}}</text> bpm
+  </view>
+</view>
+<view class="container">
+  <ec-canvas id="mychart-dom-area" canvas-id="mychart-area" ec="{{ ec }}"></ec-canvas>
+</view>

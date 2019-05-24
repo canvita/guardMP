@@ -1,0 +1,9 @@
+<!--pages/template.wxml-->
+<template name="empty">
+
+   <view class='text-center' style='padding: 40px 10px;color:#888'>
+    <image src='/style/svg/no_record.svg' style='width:160px;height:80px;margin:0 auto'></image>
+    <view style='height:10px'></view>
+    <view>{{text}}</view>
+   </view>
+</template>

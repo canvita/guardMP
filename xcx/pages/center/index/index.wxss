@@ -1,0 +1,164 @@
+/* pages/center/index/index.wxss */
+
+.btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 30rpx;
+  font-size: 14px;
+  color: white;
+  line-height: 30px;
+  background: #8bcd48;
+}
+
+
+.info-wrapper {
+  position: relative;
+  margin: 15px 10px 0 15px;
+  height: 75px;
+  background: #fff;
+  border-radius: 10px;
+}
+.info-avator {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+}
+
+.login-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+  background: #8bcd48;
+}
+
+
+
+.nick-name {
+  font-size: 34rpx;
+}
+
+.fake-mobile {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 50px;
+  height: 100rpx;
+  line-height: 100rpx;
+  font-size: 34rpx;
+  margin-left: 10px;
+}
+
+
+.medical-card {
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  height: 280rpx;
+  margin: 20rpx 20rpx 20rpx 32rpx;
+  padding: 40rpx;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.add-card {
+  position: relative;
+  height: 280rpx;
+  margin: 20rpx 20rpx 20rpx 32rpx;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.medical-card-info {
+  z-index: 1;
+  position: relative;
+  width: 200px;
+}
+
+.medical-card-name {
+  font-size: 36rpx;
+
+}
+
+.medical-card-sexual {
+  color: #a5a5a5;
+  font-size: 24rpx;
+  padding-left: 10rpx;
+}
+
+.medical-card-item {
+  height: 50rpx;
+  line-height: 50rpx;
+  font-size: 26rpx;
+}
+
+.medical-card-icon {
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+
+
+.medical-card-no {
+  width: 100%;
+  font-size: 38rpx;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+
+.add-svg {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 110rpx;
+  height: 110rpx;
+}
+
+.choose-btn {
+  position: absolute;
+  right: 40rpx;
+  top: 40rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  
+  font-size: 26rpx;
+  
+}
+
+.palin {
+  color: #333;
+  background: #fff;
+}
+
+.green {
+  color: #fff;
+  background: #1aad19;
+}
+
+.warn {
+  position: absolute;
+  right: 40rpx;
+  top: 120rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  color: #830000;
+  border: 1px solid #830000;
+  padding: 0 10px;
+  border-radius: 5px;
+}
+
+.warn-image {
+  width: 40rpx;
+  height: 40rpx;
+  vertical-align: text-bottom;
+  margin: 0 10px 0 5px;
+}
